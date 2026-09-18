@@ -4,7 +4,7 @@ Landing premium, estática y *mobile first* para reservar cita en menos de
 30 segundos. Pensada para recibir tráfico desde el link de Instagram y
 desplegarse en Cloudflare Pages.
 
-**Estado: funcional y con las imágenes reales ya integradas.**
+**Estado: EN VIVO en https://landing-caveland.vercel.app**
 
 ---
 
@@ -126,20 +126,55 @@ Y abre <http://localhost:8788>.
 
 ---
 
-## 5. Desplegar en Cloudflare Pages
+## 5. Despliegue — YA ESTÁ EN VIVO
+
+**URL de producción: https://landing-caveland.vercel.app**
+
+| | |
+|---|---|
+| Repositorio | https://github.com/sebastianfeijoo97/landing-caveland |
+| Proyecto Vercel | `landing-caveland` (`prj_ZBLB7zoZeDYXs4Hy6CRqcWTEBdMC`) |
+| Rama de producción | `main` |
 
 El proyecto es 100 % estático: **no hay build**.
 
-1. Sube la carpeta a un repositorio de GitHub (o usa *Direct Upload*).
-2. Cloudflare Pages → **Create a project**.
-3. Configuración:
-   - **Framework preset:** `None`
-   - **Build command:** *(vacío)*
-   - **Build output directory:** `/`
-4. Deploy.
+### Cómo publicar un cambio
 
-`_headers` ya configura caché larga para `assets/`, caché corta para `config/`
-(para que tus ediciones se vean enseguida) y cabeceras básicas de seguridad.
+Está conectado a GitHub, así que **cada push a `main` se despliega solo**:
+
+```bash
+git add -A
+git commit -m "Actualizo precios"
+git push
+```
+
+En ~30 segundos el cambio está en vivo. Los pull requests generan además una
+URL de preview propia.
+
+### Configuración aplicada
+
+`vercel.json` define las cabeceras y Vercel las está sirviendo (verificado):
+
+- `/assets/*` → `max-age=31536000, immutable`
+- `/styles/*` y `/js/*` → `max-age=604800`
+- `/config/*` → `max-age=300` (para que tus ediciones se vean enseguida)
+- `/index.html` → `max-age=0, must-revalidate`
+- Seguridad: `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`,
+  `Permissions-Policy`
+
+> **Vercel Authentication está desactivada** a propósito. Vercel la activa por
+> defecto en proyectos nuevos, lo que obligaría a iniciar sesión para ver la
+> página — inservible para una landing pública que recibe tráfico de Instagram.
+> Si algún día la reactivas, la web dejará de ser accesible para tus clientes.
+
+### Dominio propio
+
+Cuando tengas el dominio, añádelo en Vercel (*Project → Settings → Domains*) y
+acuérdate de actualizar el `<link rel="canonical">` de `index.html`, que ahora
+apunta a un valor de ejemplo.
+
+> El archivo `_headers` que queda en el repo es de Cloudflare Pages y Vercel lo
+> ignora. Lo dejé por si algún día migras; en Vercel manda `vercel.json`.
 
 ---
 
