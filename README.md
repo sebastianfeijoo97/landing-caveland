@@ -1,8 +1,7 @@
 # Caveland Barber Studio — Landing de reservas
 
 Landing premium, estática y *mobile first* para reservar cita en menos de
-30 segundos. Pensada para recibir tráfico desde el link de Instagram y
-desplegarse en Cloudflare Pages.
+30 segundos. Pensada para recibir tráfico desde el link de Instagram.
 
 **Estado: EN VIVO en https://landing-caveland.vercel.app**
 
@@ -71,7 +70,8 @@ para el cuerpo.
 Landing Caveland/
 ├── index.html              Único HTML. Semántico + SEO + JSON-LD
 ├── README.md
-├── _headers                Caché y seguridad para Cloudflare Pages
+├── vercel.json             Cabeceras de caché y seguridad (Vercel)
+├── _headers                Equivalente para Cloudflare Pages (Vercel lo ignora)
 ├── dev-server.ps1          Servidor local para previsualizar
 ├── tailwind.config.js      Config de Tailwind (solo si regeneras el CSS)
 ├── assets/
