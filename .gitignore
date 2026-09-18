@@ -1,0 +1,10 @@
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Vercel
+.vercel
+
+# Node (por si algún día compilas Tailwind)
+node_modules/

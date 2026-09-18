@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0a0b">
+
+  <!-- ============================ SEO ============================ -->
+  <title>Caveland Barber Studio | Reserva tu cita en Samborondón</title>
+  <meta name="description" content="Barber studio en Samborondón. Corte, barba, tratamientos capilares, manicura y pedicura. Reserva tu cita online en menos de 30 segundos.">
+  <meta name="keywords" content="barbería Samborondón, barber studio, corte de cabello, servicio de barba, tratamiento capilar, tinturado, alisado, manicura pedicura, reservar cita barbería">
+  <meta name="author" content="Caveland Barber Studio">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://caveland.pages.dev/">
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Caveland Barber Studio">
+  <meta property="og:title" content="Caveland Barber Studio | Reserva tu cita">
+  <meta property="og:description" content="Corte, barba, tratamientos capilares y más en Samborondón. Reserva online en menos de 30 segundos.">
+  <meta property="og:image" content="assets/local-exterior.jpg">
+  <meta property="og:locale" content="es_EC">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Iconos — favicon cuadrado sobre fondo negro (el logo es blanco y
+       se perdería sobre las pestañas claras del navegador) -->
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="256x256">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
+  <!-- ======================= Rendimiento ======================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/local-exterior.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap">
+  </noscript>
+
+  <!-- ==================== Datos estructurados ==================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Caveland Barber Studio",
+    "image": "assets/local-exterior.jpg",
+    "description": "Barber studio en Samborondón. Corte de cabello, servicio de barba, tratamientos capilares, tinturado, alisado, manicura y pedicura.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Diana Quintana Noboa, Urb. Central Park",
+      "addressLocality": "Samborondón",
+      "addressRegion": "Guayas",
+      "postalCode": "092301",
+      "addressCountry": "EC"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -2.1286516, "longitude": -79.8646131 },
+    "hasMap": "https://maps.app.goo.gl/sFaM6GVRzzEyX5Ni6",
+    "telephone": "+593999999999",
+    "priceRange": "$$",
+    "currenciesAccepted": "USD",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "18:00" }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Salto rápido al contenido (accesibilidad) -->
+  <a href="#inicio" class="sr-only">Saltar al contenido</a>
+
+  <!-- Región para lectores de pantalla -->
+  <p id="anuncios" class="sr-only" role="status" aria-live="polite"></p>
+
+  <!-- ================================================================
+       NAVEGACIÓN
+       ================================================================ -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#inicio" class="nav-brand" aria-label="Caveland Barber Studio — inicio">
+        <img data-cv-src="logo" src="assets/logo.png" alt="Logo de Caveland Barber Studio"
+             class="nav-logo" width="640" height="328" decoding="async">
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#barberos" class="nav-link">Barberos</a>
+        <a href="#ubicacion" class="nav-link">Ubicación</a>
+      </nav>
+
+      <a href="#reservar" class="btn btn-gold btn-sm">Reservar</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================================================================
+         HERO
+         ================================================================ -->
+    <section class="hero" id="inicio">
+      <img data-cv-src="exterior" src="assets/local-exterior.jpg"
+           alt="Fachada de Caveland Barber Studio" class="hero-bg"
+           width="1400" height="1750" fetchpriority="high" decoding="async">
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <img data-cv-src="logo" src="assets/logo.png" alt="Logo de Caveland Barber Studio"
+             class="hero-logo" width="640" height="328" fetchpriority="high" decoding="async">
+
+        <!-- El logo ya muestra el nombre, así que el H1 queda solo para
+             lectores de pantalla y buscadores (evita duplicar "Caveland"). -->
+        <h1 class="sr-only" data-cv="nombre-completo">Caveland Barber Studio</h1>
+        <p class="hero-slogan gold-gradient" data-cv="eslogan">Entra como cliente, sal como leyenda.</p>
+        <p class="hero-desc" data-cv="descripcion">
+          Barbería premium. Cortes de precisión, barba impecable y una experiencia
+          que se siente distinta desde que cruzas la puerta.
+        </p>
+
+        <a href="#reservar" class="btn btn-gold">Reservar cita</a>
+
+        <div class="hero-badges">
+          <span class="badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.6 5.6 6.1.8-4.5 4.2 1.2 6L12 16.8 6.6 19.6l1.2-6L3.3 9.4l6.1-.8z"/></svg>
+            4 barberos expertos
+          </span>
+          <span class="badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            Reserva en 30 segundos
+          </span>
+          <span class="badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+            Sin filas ni esperas
+          </span>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SERVICIOS
+         ================================================================ -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Carta</span>
+          <h2 class="section-title">Servicios</h2>
+          <hr class="rule-gold">
+          <p class="section-sub">
+            Toca un servicio y lo guardamos en tu reserva automáticamente.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal" id="servicios-grid">
+          <!-- Se rellena desde js/components.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         BARBEROS
+         ================================================================ -->
+    <section class="section" id="barberos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">El equipo</span>
+          <h2 class="section-title">Nuestros barberos</h2>
+          <hr class="rule-gold">
+          <p class="section-sub">Elige con quién quieres sentarte en la silla.</p>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-8 reveal" id="barberos-grid">
+          <!-- Se rellena desde js/components.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         EXPERIENCIA (imagen del interior)
+         ================================================================ -->
+    <section class="experience">
+      <img data-cv-src="interior" src="assets/local-interior.jpg"
+           alt="Interior de Caveland Barber Studio" class="experience-media"
+           width="1400" height="1750" loading="lazy" decoding="async">
+      <div class="experience-overlay" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="experience-content reveal">
+          <span class="section-eyebrow">La guarida</span>
+          <h2 class="section-title">Más que un corte</h2>
+          <hr class="rule-gold" style="margin-inline:0">
+          <p class="section-sub">
+            Música, café y una silla que es tuya durante el tiempo que dure.
+            En Caveland no atendemos por turnos apurados: cada cliente tiene
+            su espacio, su tiempo y su resultado.
+          </p>
+
+          <div class="stat-row">
+            <div>
+              <div class="stat-value">4</div>
+              <div class="stat-label">Barberos</div>
+            </div>
+            <div>
+              <div class="stat-value">10</div>
+              <div class="stat-label">Servicios</div>
+            </div>
+            <div>
+              <div class="stat-value">Lun–Sáb</div>
+              <div class="stat-label">Siempre abierto</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         RESERVA — wizard de 5 pasos
+         ================================================================ -->
+    <section class="section" id="reservar">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Agenda</span>
+          <h2 class="section-title">Reserva tu cita</h2>
+          <hr class="rule-gold">
+          <p class="section-sub">Cinco pasos rápidos. Sin llamadas, sin esperas.</p>
+        </div>
+
+        <div class="booking-shell reveal">
+          <!-- Indicador de progreso -->
+          <div class="stepper" id="stepper" role="group" aria-label="Progreso de la reserva">
+            <div class="step-dot is-active" data-paso="1" aria-current="step">
+              <span class="step-bar"></span><span class="step-label">Servicio</span>
+            </div>
+            <div class="step-dot" data-paso="2" aria-current="false">
+              <span class="step-bar"></span><span class="step-label">Barbero</span>
+            </div>
+            <div class="step-dot" data-paso="3" aria-current="false">
+              <span class="step-bar"></span><span class="step-label">Fecha</span>
+            </div>
+            <div class="step-dot" data-paso="4" aria-current="false">
+              <span class="step-bar"></span><span class="step-label">Hora</span>
+            </div>
+            <div class="step-dot" data-paso="5" aria-current="false">
+              <span class="step-bar"></span><span class="step-label">Datos</span>
+            </div>
+          </div>
+
+          <div class="booking-body" id="booking-body">
+
+            <!-- PASO 1 — Servicio -->
+            <div class="step-panel is-active" data-paso="1">
+              <h3 class="step-title">¿Qué te hacemos hoy?</h3>
+              <p class="step-hint">Elige un servicio para continuar.</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="paso-servicio-grid"></div>
+            </div>
+
+            <!-- PASO 2 — Barbero -->
+            <div class="step-panel" data-paso="2">
+              <h3 class="step-title">¿Con quién te sientas?</h3>
+              <p class="step-hint">Solo puedes elegir un barbero.</p>
+              <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-3" id="paso-barbero-grid"></div>
+            </div>
+
+            <!-- PASO 3 — Fecha -->
+            <div class="step-panel" data-paso="3">
+              <h3 class="step-title">¿Qué día te viene bien?</h3>
+              <p class="step-hint">Desliza para ver más fechas. Los días cerrados aparecen en gris.</p>
+              <div class="date-scroller" id="fechas-scroller" role="group" aria-label="Elige una fecha"></div>
+            </div>
+
+            <!-- PASO 4 — Hora -->
+            <div class="step-panel" data-paso="4">
+              <h3 class="step-title">Elige tu hora</h3>
+              <p class="step-hint"><span id="turnos-fecha">—</span></p>
+              <div class="slot-grid" id="turnos-grid" role="group" aria-label="Horarios disponibles"></div>
+
+              <div class="slot-legend">
+                <span class="legend-item"><span class="legend-swatch is-free"></span>Disponible</span>
+                <span class="legend-item"><span class="legend-swatch is-busy"></span>Ocupado</span>
+                <span class="legend-item"><span class="legend-swatch is-picked"></span>Tu elección</span>
+              </div>
+            </div>
+
+            <!-- PASO 5 — Datos del cliente -->
+            <div class="step-panel" data-paso="5">
+              <h3 class="step-title">Últimos datos</h3>
+              <p class="step-hint">Para confirmarte la cita y recordártela.</p>
+
+              <div class="summary" id="resumen"></div>
+
+              <form id="form-cliente" novalidate>
+                <div class="field">
+                  <label class="label" for="campo-nombre">Nombre completo</label>
+                  <input class="input" id="campo-nombre" name="nombre" type="text"
+                         autocomplete="name" placeholder="Ej. Juan Pérez"
+                         aria-describedby="error-nombre" required>
+                  <p class="error-msg" id="error-nombre" role="alert"></p>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="campo-whatsapp">WhatsApp</label>
+                  <div class="input-prefix">
+                    <span aria-hidden="true">+593</span>
+                    <input class="input" id="campo-whatsapp" name="whatsapp" type="tel"
+                           inputmode="numeric" autocomplete="tel-national"
+                           placeholder="99 999 9999" maxlength="12"
+                           aria-describedby="error-whatsapp" required>
+                  </div>
+                  <p class="error-msg" id="error-whatsapp" role="alert"></p>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="campo-email">Correo electrónico</label>
+                  <input class="input" id="campo-email" name="email" type="email"
+                         autocomplete="email" placeholder="tucorreo@ejemplo.com"
+                         aria-describedby="error-email" required>
+                  <p class="error-msg" id="error-email" role="alert"></p>
+                </div>
+              </form>
+            </div>
+
+            <!-- Controles -->
+            <div class="booking-actions">
+              <button type="button" class="btn btn-ghost hidden" id="btn-atras">Atrás</button>
+              <button type="button" class="btn btn-gold flex-1" id="btn-siguiente" disabled>Continuar</button>
+              <button type="button" class="btn btn-gold flex-1 hidden" id="btn-confirmar">Confirmar reserva</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         UBICACIÓN
+         ================================================================ -->
+    <section class="section" id="ubicacion">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Visítanos</span>
+          <h2 class="section-title">Dónde estamos</h2>
+          <hr class="rule-gold">
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 reveal">
+          <div class="map-frame">
+            <iframe id="mapa-iframe" title="Ubicación de Caveland Barber Studio en Google Maps"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
+          </div>
+
+          <div class="flex flex-col justify-center">
+            <div class="info-list">
+              <div class="info-item">
+                <span class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+                </span>
+                <div>
+                  <div class="info-title">Dirección</div>
+                  <div class="info-value" data-cv="direccion">—</div>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.2 2 2 0 0 1 5 3Z"/></svg>
+                </span>
+                <div>
+                  <div class="info-title">Teléfono</div>
+                  <a class="info-value" data-cv-href="telefono" href="#"><span data-cv="telefono">—</span></a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+                </span>
+                <div class="w-full">
+                  <div class="info-title mb-2">Horario de atención</div>
+                  <table class="hours-table">
+                    <caption class="sr-only">Horario de atención de Caveland Barber Studio</caption>
+                    <tbody id="horario-tbody"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <a class="btn btn-gold mt-6" data-cv-href="direcciones" href="#" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 19-9-9 19-2-8z"/></svg>
+              Cómo llegar
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <img data-cv-src="logo" src="assets/logo.png" alt="Logo de Caveland Barber Studio"
+               class="footer-logo" width="640" height="328" loading="lazy" decoding="async">
+          <p class="text-sm text-muted max-w-prose" data-cv="descripcion">—</p>
+
+          <div class="social-row">
+            <a class="social-btn" data-cv-href="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram de Caveland">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a class="social-btn" data-cv-href="whatsapp" href="#" target="_blank" rel="noopener" aria-label="WhatsApp de Caveland">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.13c-.25.69-1.44 1.32-1.99 1.37-.53.05-1.02.24-3.44-.72-2.89-1.14-4.72-4.1-4.86-4.29-.14-.19-1.16-1.54-1.16-2.94s.73-2.09 1-2.37c.26-.29.57-.36.76-.36l.55.01c.18.01.41-.07.64.49.25.6.83 2.07.9 2.22.07.15.12.32.02.51-.1.19-.15.31-.29.48l-.44.51c-.14.14-.29.3-.12.59.16.29.73 1.2 1.56 1.94 1.07.95 1.97 1.25 2.26 1.39.29.15.45.12.62-.07.17-.19.71-.83.9-1.12.19-.29.38-.24.64-.14.26.09 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.69-.18 1.38Z"/></svg>
+            </a>
+            <a class="social-btn" data-cv-href="email" href="#" aria-label="Escríbenos un correo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Contacto</h3>
+          <div class="info-list">
+            <p class="text-sm text-muted" data-cv="direccion">—</p>
+            <a class="text-sm text-muted" data-cv-href="telefono" href="#"><span data-cv="telefono">—</span></a>
+            <a class="text-sm text-muted" data-cv-href="email" href="#"><span data-cv="email">—</span></a>
+            <a class="text-sm text-muted" data-cv-href="instagram" href="#" target="_blank" rel="noopener"><span data-cv="instagram">—</span></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Horario</h3>
+          <table class="hours-table">
+            <caption class="sr-only">Horario de atención</caption>
+            <tbody id="horario-tbody-footer"></tbody>
+          </table>
+          <a href="#reservar" class="btn btn-ghost btn-sm mt-4">Reservar cita</a>
+        </div>
+      </div>
+
+      <p class="footer-bottom">
+        © <span data-cv="anio">2026</span> <span data-cv="nombre-completo">Caveland Barber Studio</span>.
+        Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ================================================================
+       ELEMENTOS FLOTANTES
+       ================================================================ -->
+  <a class="wa-fab" data-cv-href="whatsapp" href="#" target="_blank" rel="noopener"
+     aria-label="Escríbenos por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.13c-.25.69-1.44 1.32-1.99 1.37-.53.05-1.02.24-3.44-.72-2.89-1.14-4.72-4.1-4.86-4.29-.14-.19-1.16-1.54-1.16-2.94s.73-2.09 1-2.37c.26-.29.57-.36.76-.36l.55.01c.18.01.41-.07.64.49.25.6.83 2.07.9 2.22.07.15.12.32.02.51-.1.19-.15.31-.29.48l-.44.51c-.14.14-.29.3-.12.59.16.29.73 1.2 1.56 1.94 1.07.95 1.97 1.25 2.26 1.39.29.15.45.12.62-.07.17-.19.71-.83.9-1.12.19-.29.38-.24.64-.14.26.09 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.69-.18 1.38Z"/></svg>
+  </a>
+
+  <div class="mobile-cta md:hidden" id="cta-movil">
+    <a href="#reservar" class="btn btn-gold btn-block">
+      <span id="cta-movil-texto">Reservar cita</span>
+    </a>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- ================================================================
+       SCRIPTS
+       ================================================================ -->
+  <script src="config/config.js" defer></script>
+  <script src="js/components.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+/* Entrada para el CLI de Tailwind.
+   Ver el README: "Regenerar el CSS con Tailwind". */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

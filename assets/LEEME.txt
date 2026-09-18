@@ -1,0 +1,23 @@
+IMÁGENES DE LA LANDING — ya están todas integradas.
+
+  logo.png             640x328   Logo con FONDO TRANSPARENTE (procesado
+                                 desde "Logo total.jpg": se recortó el
+                                 borde negro y se eliminó el fondo)
+  local-exterior.jpg   1400x1750 Fachada — fondo del hero
+  local-interior.jpg   1400x1750 Interior — sección "Más que un corte"
+
+  barberos/lex.jpg     600x800   Lex     (el del tatuaje en el brazo)
+  barberos/bryan.jpg   600x800   Bryan   (camiseta blanca y gorra NY)
+  barberos/peter.jpg   600x800   Peter   (de negro, cuerpo entero)
+  barberos/roberto.jpg 600x800   Roberto (el que corta al niño)
+  favicon.png          256x256   Favicon: el logo sobre cuadrado negro
+
+SI CAMBIAS ALGUNA FOTO, respeta estas proporciones:
+  - Barberos: 3:4 vertical. La cara debe quedar en el TERCIO SUPERIOR,
+    porque el nombre y la especialidad se superponen abajo.
+  - Local: 4:5 vertical.
+  - Logo: PNG con transparencia (si tiene fondo negro se verá un
+    recuadro sobre la foto de la fachada).
+
+Para usar otros nombres o formatos (.webp), cámbialos en
+config/config.js → CAVELAND.imagenes y CAVELAND.barberos[].foto

@@ -1,0 +1,7 @@
+# No hace falta subirlos: son solo para desarrollo local
+dev-server.ps1
+_headers
+README.md
+assets/LEEME.txt
+tailwind.config.js
+styles/tailwind.input.css
